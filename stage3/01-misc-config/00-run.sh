@@ -21,6 +21,6 @@ on_chroot << EOF
 	ln -fs /lib/systemd/system/getty@.service /etc/systemd/system/getty.target.wants/getty@tty1.service
 EOF
 
-# Set up sudoers.d for user patch
+# Set up sudoers.d for user 
 rm -f ${ROOTFS_DIR}/etc/sudoers.d/010_pi-nopasswd
-install -m 440 files/010_patch-nopasswd ${ROOTFS_DIR}/etc/sudoers.d/
+install -m 440 files/010_sudo-nopasswd ${ROOTFS_DIR}/etc/sudoers.d/

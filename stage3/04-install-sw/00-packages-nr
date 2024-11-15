@@ -1,6 +1,6 @@
-pd-blokas
-git
-patchage
-aconnectgui
-realvnc-vnc-server
-liblo7 liblo-dev libasound-dev libjack-jackd2-dev
+#pd-blokas
+#git
+#patchage
+#aconnectgui
+#realvnc-vnc-server
+liblo7 liblo-dev libasound2-dev libjack-jackd2-dev

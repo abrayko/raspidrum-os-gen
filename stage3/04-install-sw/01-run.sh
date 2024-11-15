@@ -5,7 +5,3 @@ EOF
 
 # Copy preconfigured PD settings.
 cp files/.pdsettings ${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.pdsettings
-
-# Install desktop shortcuts.
-mkdir -p ${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop
-cp files/Desktop/*.desktop ${ROOTFS_DIR}/home/${FIRST_USER_NAME}/Desktop/
