@@ -7,7 +7,4 @@ on_chroot << EOF
 	systemctl enable cpu_performance_scaling_governor
 	systemctl disable raspi-config # raspi-config is only enabling 'ondemand' governor as of 2018.08.19
 
-	cd /usr/local/pisound
-	git fetch
-	git checkout patchbox
 EOF
