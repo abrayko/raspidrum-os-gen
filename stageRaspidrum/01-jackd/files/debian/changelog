@@ -1,0 +1,23 @@
+blokas-jack (1.0.4-1) UNRELEASED; urgency=low
+
+  * Restructured the package for building with dpkg-buildpackage.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 12 Feb 2024 14:21:23 +0200
+
+blokas-jack (1.0.3-1) buster; urgency=low
+
+  * Restart the jack.service when /usr/bin/jackd is modified by dpkg, like during upgrades.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 12 Sep 2022 23:47:37 +0300
+
+blokas-jack (1.0.2-1) buster; urgency=low
+
+  * Autorestart the Jack server in case of failure.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Tue, 17 May 2022 14:20:51 +0100
+
+blokas-jack (1.0.1-1) buster; urgency=low
+
+  * Enable and start Jack server after installing.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 06 Apr 2020 13:20:31 +0100

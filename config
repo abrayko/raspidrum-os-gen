@@ -10,4 +10,5 @@ KEYBOARD_LAYOUT="English (US)"
 WPA_COUNTRY="RU"
 ENABLE_SSH="1"
 STAGE_LIST="stage0 stage1 stage2 stage3 stageRaspidrum"
+DEPLOY_COMPRESSION=none
 USE_QEMU=0

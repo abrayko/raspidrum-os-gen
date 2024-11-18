@@ -1,3 +1,5 @@
+USR=$FIRST_USER_NAME
+
 if [ "$1" = "triggered" ]; then
 	if systemctl -q is-active jack.service; then
 		systemctl restart jack.service
@@ -19,10 +21,9 @@ if id -u pi > /dev/null 2>&1; then
 	fi
 fi
 
-if id -u patch > /dev/null 2>&1; then
-	if ! groups patch 2>/dev/null | grep -q jack; then
-		adduser patch jack --quiet
-		GROUP_MEMBERSHIP_CHANGED=true
+if id -u $USR > /dev/null 2>&1; then
+	if ! groups $USR 2>/dev/null | grep -q jack; then
+		adduser $USR jack --quiet
 	fi
 fi
 
@@ -30,15 +31,8 @@ adduser root jack --quiet
 
 echo "JACK_PROMISCUOUS_SERVER=jack" >> /etc/environment
 
-#DEBHELPER#
 
-if $GROUP_MEMBERSHIP_CHANGED; then
-	echo
-	echo "Important! As your group membership changed, you must log out and log back in once for Jack applications to start working."
-	echo
-fi
-
-if ! id -u pi > /dev/null 2>&1 && ! id -u patch > /dev/null 2>&1; then
+if ! id -u pi > /dev/null 2>&1 && ! id -u $USR > /dev/null 2>&1; then
 	echo
 	echo "Important! Add your own user to group 'jack' (run: 'sudo adduser your_user jack'), log out and log back in!"
 	echo

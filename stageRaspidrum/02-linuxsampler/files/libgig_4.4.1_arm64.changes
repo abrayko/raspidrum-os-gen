@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 20 Feb 2024 17:27:47 +0100
+Source: libgig
+Binary: gigtools libgig-dev libgig11
+Architecture: arm64
+Version: 4.4.1
+Distribution: unstable
+Urgency: low
+Maintainer: LinuxSampler Developers <linuxsampler-devel@lists.sourceforge.net>
+Changed-By: Christian Schoenebeck <cuse@users.sourceforge.net>
+Description:
+ gigtools   - command line tools for GigaStudio, SF2, DLS, KORG and AKAI files
+ libgig-dev - library for accessing GigaStudio, DLS, SoundFont, KORG, AKAI file
+ libgig11   - library for accessing GigaStudio, DLS, SoundFont, KORG, AKAI file
+Changes:
+ libgig (4.4.1) unstable; urgency=low
+ .
+   * New release.
+Checksums-Sha1:
+ 5e4903f29384d271cdb0383bc50cf3e1e4338375 1636944 gigtools_4.4.1_arm64.deb
+ 4ab19974b1c8955c087b7c4b2cb1ae7a228ce3be 3374888 libgig-dev_4.4.1_arm64.deb
+ ff801d556d33a6c278feaa4cd7dae4d243dce516 2176708 libgig11_4.4.1_arm64.deb
+ 58310c3e60e5a45915cdd63586d256bdf17f6b6d 6161 libgig_4.4.1_arm64.buildinfo
+Checksums-Sha256:
+ 98be3fc670a6fa949806fef8156bee25de3c886e48dda9dad161cdd3bc22e785 1636944 gigtools_4.4.1_arm64.deb
+ 8e8acc98f78dab1cfc70c93d2a2c8aa10ffa62be81ad196be6cf1d3c7196c5af 3374888 libgig-dev_4.4.1_arm64.deb
+ 7f92bbbf0fcc3f6abad09c90afdf7b5343f32927881893b3476b5f38dfc2218d 2176708 libgig11_4.4.1_arm64.deb
+ 030d8b884b85258d5c37e5961616ac3c3fa02df460a337588356afddf0b29047 6161 libgig_4.4.1_arm64.buildinfo
+Files:
+ 0ecf11e7cb4de17f741de65145343400 1636944 utils optional gigtools_4.4.1_arm64.deb
+ 4a5f816693276c56d3039d6998b77a7d 3374888 libdevel optional libgig-dev_4.4.1_arm64.deb
+ f70371e988d3ff1b0edf16ca42c61609 2176708 libs optional libgig11_4.4.1_arm64.deb
+ 65e78ebe40e3422ea2ba491a82a97054 6161 devel optional libgig_4.4.1_arm64.buildinfo
